@@ -15,9 +15,7 @@
  .contact_infrom span {
   background-color: lightgray;
   padding: 5px;
-  gap : 200px;
   border-radius: 4px;
-  gap : 200px;
 }
 
 nav{
@@ -35,10 +33,11 @@ nav{
 }
 .nav-links{
 	list-style:none;
+	display:flex;
 	gap:20px;
 	display:flex;
-	margin: 20px;
-	padding: 0px;
+	margin: 20px 0px;
+	padding: 0;
 }
 .nav-links li a{
 	text-decoration: none;
@@ -50,6 +49,7 @@ nav{
 	color: black;
 	text-decoration: none;
 	padding: 10px,20px;
+	border-radius: 5px;
 	
 }
 
@@ -88,24 +88,18 @@ nav{
 .hero-content p {
   font-size: 16px;
   margin-bottom: 30px;
-  margin-top: auto;
 }
 /*.vertical line class styles the vertical line width,height,background,margin,margin-top,margin-right*/
 .vertical-line {
   width: 4px;
   height: 240px; /* Adjust height as needed */
   background: linear-gradient(to top ,#ff00bf,#ffee00);
-  margin: 20px;
-  margin-top: 50px;
-  margin-right: 50px;
-  margin-left: -100px;
-  
-  
+  margin: 20px 50px 0 -100px;
 }
 
 .butn {
   background-color: #f72585;
-  padding: 10px;
+  padding: 10px 20px;
   color: white;
   text-decoration: none;
   border-radius: 20px;
@@ -114,7 +108,7 @@ nav{
   background-color: transparent;
   margin: 10px;
   border-radius:20px;
-  padding:8px;
+  padding:8px 20px;
   border: 1px solid white;  /* Added border style and color */
   color: white;
   text-decoration: none;
@@ -129,28 +123,19 @@ nav{
 	background: linear-gradient(to right ,#ffee00 ,#ff00bf);
 	padding: 50px;
 	padding-bottom: 125px;
+	color: white;
+    text-align: center;
 }
 .displaywork-items{
-	text-align: center;
-	color: white;
 	font-size: 20px;
 	font-weight: bold;
 	text-transform: UpperCase;
 }
-.first{
-	padding-left :230px;
-	padding-right: 120px;
+.first,
+.secound,
+.third {
+  padding: 0 60px;
 }
-.secound{
-	padding-right: 120px;
-}
-.third{
-	padding-right: 120px;
-}
-
-
-
-
 
 .about-us {
 	text-transform: uppercase;
@@ -161,12 +146,11 @@ nav{
 	font-size: 26px;
 	font-family: fantasy;
 	margin-top: 50px;
-	text-align: center;
-	margin-right: 1015px;
-	padding-bottom:200px;
+	text-align: left;
+	padding-left:195px;
+	padding-bottom: 10px;
 }
 .aboutus-text h3{
-	display:flex;
 	font-weight:bold;
 	text-transform: lowercase;
 	padding-left:190px
@@ -179,43 +163,48 @@ nav{
     height: 4px;
     background:linear-gradient(to right ,#ffee00 ,#ff00bf) ;
     margin-left: 195px;
-    margin-top: -200px;
+    margin-top: 10px;
 }
 .about-inform{
-	  font-size: 18px;
-      letter-spacing: 2px;
-	  width: 60%;                 /* Controls the paragraph width */
-      margin: 50px auto;          /* Centers the paragraph on the page */
-      text-transform:capitalize;
-      line-height: 20px;           /* Adds space between lines for readability */
-      font-size: 15px;            /* Increases text size */
-      font-style: oblique;
-      font-weight:900;
-      font-stretch:wider;
-      align-self: center;
-      margin-left:190px
+  font-size: 15px;
+  font-style: oblique;
+  font-weight: 900;
+  letter-spacing: 2px;
+  width: 60%;
+  line-height: 20px;
+  text-transform: capitalize;
+  margin: 50px auto 0 190px;
         
 }
 .about-butn{
       
-      letter-spacing: 2px;
-	  align-content:center;
-      border-radius: 30px;
-      background: linear-gradient(to right ,#ffee00 ,#ff00bf);
-      cursor: pointer;
-      width: 200px;
-      height: 50px;
-      margin-left: 195px;    
+       display: inline-block;
+       letter-spacing: 2px;
+       border-radius: 30px;
+       background: linear-gradient(to right, #ffee00, #ff00bf);
+       cursor: pointer;
+       width: 200px;
+       height: 50px;
+       margin-left: 195px;
+       text-align: center;
+       line-height: 50px;    
 }
-.about-butn p{
-	text-align:center;
-	font-size: 12px;
-	letter-spacing: 2px;
-	padding:30px;
+.about-butn span{
+
+	font-size: 20px;
 	
-	
+	color: white;
 }
 
+.our_service{
+     position: relative;
+     background-size: cover;
+     background-position: center;
+     height: 65vh;
+     display: flex;
+   
+     color: white;
+}
 
 
 
